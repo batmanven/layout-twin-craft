@@ -14,9 +14,9 @@ const data = [
 
 export const PerformanceChart = () => {
   return (
-    <Card className="bg-card border-border p-6">
-      <h3 className="text-xl font-semibold text-foreground mb-6">Performance</h3>
-      <ResponsiveContainer width="100%" height={300}>
+    <Card className="bg-card border-border p-4 md:p-6">
+      <h3 className="text-lg md:text-xl font-semibold text-foreground mb-4 md:mb-6">Performance</h3>
+      <ResponsiveContainer width="100%" height={250} className="md:h-[300px]">
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
           <XAxis 
